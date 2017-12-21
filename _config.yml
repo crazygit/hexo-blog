@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 宁静的夜
-subtitle: 心中一片静谧
+title: Soul Mate
+subtitle: 宁静的夜, 心中一片静谧
 description: 技术和生活分享
 author: crazygit
 language: zh-Hans
@@ -99,3 +99,11 @@ feed:
 sitemap:
     path: sitemap.xml
     template: node_modules/hexo-generator-sitemap/sitemap.xml
+
+# hexo-generator-search
+# Docs: https://github.com/flashlab/hexo-generator-search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
