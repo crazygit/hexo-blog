@@ -1,0 +1,15 @@
+hexo: 3.4.4
+hexo-cli: 1.0.4
+os: Darwin 17.3.0 darwin x64
+http_parser: 2.7.0
+node: 8.0.0
+v8: 5.8.283.41
+uv: 1.11.0
+zlib: 1.2.11
+ares: 1.10.1-DEV
+modules: 57
+openssl: 1.0.2k
+icu: 58.2
+unicode: 9.0
+cldr: 30.0.3
+tz: 2016j
