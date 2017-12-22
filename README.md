@@ -1,3 +1,4 @@
+[![Travis Build Status](https://travis-ci.org/crazygit/hexo-blog.svg?branch=master)](https://travis-ci.org/crazygit/hexo-blog.svg?branch=master)
 ## [一个分享技术和生活的博客](http://crazygit.wiseturtles.com/)
 
 

@@ -22,7 +22,7 @@ deploy:
         branch: master
     local_dir: public
     target_branch: master
-    email: lianglin999@gmali.com
+    email: lianglin999@gmail.com
     name: crazygit
 notifications:
     slack:
