@@ -2,7 +2,6 @@
 title: NumPy快速入门指南.md
 date: 2017-12-19 22:08:10
 tags: numpy
-categories: 数据分析
 permalink: numpy-qucikstart
 ---
 
