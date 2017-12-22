@@ -16,8 +16,8 @@ script:
 deploy:
     provider: pages
     skip_cleanup: true
-    github_token: "$GITHUB_TOKEN"
-    repo: https://github.com/crazygit/crazygit.github.io.git
+    github_token: $GITHUB_TOKEN
+    repo: https://$GITHUB_TOKEN@github.com/crazygit/crazygit.github.io.git
     on:
         branch: master
     local_dir: public
