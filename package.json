@@ -8,8 +8,8 @@
     "version": "3.4.4"
   },
   "scripts": {
-      "g": "hexo generate",
-      "d": "hexo deploy -g",
+      "g": "hexo clean && hexo generate",
+      "d": "hexo clean && hexo deploy -g",
       "c": "hexo clean",
       "s": "hexo server",
       "l": "hexagon --list"
