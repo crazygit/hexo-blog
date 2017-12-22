@@ -11,7 +11,7 @@ branches:
         - master
 install:
     - npm install
-scrpit:
+script:
     - npm run g
 deploy:
     provider: pages
