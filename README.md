@@ -15,7 +15,7 @@
 
     $ npm run d
 
-除缓存文件(`db.json`)和已生成的静态文件(`public`)
+清除缓存文件(`db.json`)和已生成的静态文件(`public`)
 
     $ npm run c
 
