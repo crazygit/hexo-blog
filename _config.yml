@@ -112,5 +112,5 @@ search:
 # hexo-directory-category
 # Docs: https://github.com/zthxxx/hexo-directory-category
 auto_dir_categorize:
-	enable: true  # options:true, false; default is true
-	force: true # options:true, false; default is false
+  enable: true  # options:true, false; default is true
+  force: true # options:true, false; default is false
