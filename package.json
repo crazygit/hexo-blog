@@ -8,11 +8,11 @@
     "version": "3.4.4"
   },
   "scripts": {
-      "g": "hexo clean && hexo generate",
-      "d": "hexo clean && hexo deploy -g",
-      "c": "hexo clean",
-      "s": "hexo server",
-      "l": "hexagon --list"
+    "g": "hexo clean && hexo generate",
+    "d": "hexo clean && hexo deploy -g",
+    "c": "hexo clean",
+    "s": "hexo server",
+    "l": "hexagon --list"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -28,6 +28,7 @@
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "hexo-wordcount": "^3.0.2"
   }
 }
