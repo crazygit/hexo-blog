@@ -114,3 +114,11 @@ search:
 auto_dir_categorize:
   enable: true  # options:true, false; default is true
   force: true # options:true, false; default is false
+
+# hexo-lazyload-image
+# Docs: https://github.com/Troy-Yang/hexo-lazyload-image
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImg: # eg. ./images/loading.png
+
