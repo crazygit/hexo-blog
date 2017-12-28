@@ -3,6 +3,9 @@ title: NumPy快速入门指南.md
 date: 2017-12-19 22:08:10
 tags: numpy
 permalink: numpy-qucikstart
+description: >
+	Numpy库是python数据分析的基础库, 大部分数据分析的操作都离不开这个库。本文主要根据Numpy官网的快速入门指南整理而来, 介绍了常用的Numpy操作。
+
 ---
 
 

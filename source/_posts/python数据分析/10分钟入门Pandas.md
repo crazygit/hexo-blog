@@ -3,6 +3,9 @@ title: 10分钟入门Pandas
 date: 2017-12-20 22:21:46
 tags: pandas
 permalink: 10-minutes-to-pandas
+description: >
+    Pandas是python数据分析的瑞士军刀, 本文主要根据Pandas官网的10 Minutes to pandas整理而来
+
 ---
 
 

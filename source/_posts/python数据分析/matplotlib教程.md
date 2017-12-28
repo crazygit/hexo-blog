@@ -3,6 +3,8 @@ title: matplotlib教程
 date: 2017-12-25 11:14:51
 tags: matplotlib
 permalink: matplotlib-quickstart
+description: >
+    matplotlib是数据可视化的一个库，功能十分强大，使用它可以很方便的画图各种图形。
 
 ---
 
@@ -10,8 +12,8 @@ permalink: matplotlib-quickstart
 
 [Matplotlib 画图教程系列 | 莫烦Python](https://morvanzhou.github.io/tutorials/data-manipulation/plt/)
 
-## 安装	
-	
+## 安装
+
 ```bash
 $ pip install matplotlib
 ```
@@ -673,8 +675,8 @@ ani = animation.FuncAnimation(fig=fig,
 plt.show()
 ```
 
-{% 
-iframe http://images.wiseturtles.com/basic_animation.mp4 100% 100% 
+{%
+iframe http://images.wiseturtles.com/basic_animation.mp4 100% 100%
 %}
 
 ## 扩展阅读

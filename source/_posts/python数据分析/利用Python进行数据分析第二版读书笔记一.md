@@ -1,11 +1,13 @@
 ---
-title: 利用Python进行数据分析(第二版)阅读笔记(一)
+title: 《利用Python进行数据分析第二版》阅读笔记一
 date: 2017-12-26 18:21:46
 tags:
 - numpy
 - pandas
 - matplotlib
 permalink: python-for-data-analysis-2nd-edition-note-one
+description: >
+    本文是利用Python进行数据分析的阅读笔记一，主要记录了Numpy, Pandas的一些基础操作和数据读取和保存方法
 
 ---
 
