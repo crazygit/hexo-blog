@@ -350,3 +350,47 @@ The following environment variables can be set, to do various things:
   - PIPENV_TIMEOUT
 ```
 需要修改某个默认配置时，只需要把它添加到`.bashrc`或`.bash_profile`文件里即可。
+
+
+## 常见问题
+
+### `pipenv install`时报错`pip.exceptions.InstallationError: Command "python setup.py egg_info" failed with error code 1`
+
+错误原因是`pipenv`是用python2安装的， 解决办法是使用pip3重新安装pipenv
+
+```bash
+pip unintall pipenv
+pip3 install pipenv
+```
+
+### 在项目目录里运行`pipenv`时报错`AttributeError: module 'enum' has no attribute 'IntFlag'`
+
+```bash
+$ pipenv
+Failed to import the site module
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site.py", line 544, in <module>
+    main()
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site.py", line 282, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site.py", line 258, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site.py", line 248, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/sysconfig.py", line 601, in get_config_var
+    return get_config_vars().get(name)
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/sysconfig.py", line 580, in get_config_vars
+    import _osx_support
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/_osx_support.py", line 4, in <module>
+    import re
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/re.py", line 142, in <module>
+    class RegexFlag(enum.IntFlag):
+AttributeError: module 'enum' has no attribute 'IntFlag'
+```
+是因为在项目目录里运行`pipenv`命令时，项目虚拟环境的python版本低于`3.6.4`, 由于`IntFlag`是从`python3.6.4`才开始集成到python内置模块的。当激活了项目的虚拟环境之后, 环境变量`PYTHONPATH`会被设置为当前虚拟环境的`site-packages`目录，因此`pipenv`依赖的`IntFlag`无法找到。 解决办法是在运行`pipenv`时设置环境变量`PYTHONPATH`为空
+
+```bash
+$ PYTHONPATH= pipenv
+```

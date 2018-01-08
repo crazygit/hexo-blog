@@ -12,6 +12,7 @@ date: 2017-12-24 09:02:05
 
 - [ ] [Python for Data Analysis, 2nd Edition](http://shop.oreilly.com/product/0636920050896.do)([中文翻译](https://github.com/BrambleXu/pydata-notebook))
 - [ ] [Scipy Lecture Notes](http://www.scipy-lectures.org/)
+- [ ] Fast Data Processing with spark2(Third Edition)
 
 ## 非技术类
 
@@ -21,4 +22,3 @@ date: 2017-12-24 09:02:05
 - [ ] 未来简史: 从智人到智神
 - [ ] 认知盈余: 自由时间的力量
 - [ ] 三体
-
