@@ -1,5 +1,6 @@
 ---
 title: 《利用Python进行数据分析第二版》阅读笔记三
+date: 2018-01-04 21:33:14
 tags:
 - pandas
 permalink: python-for-data-analysis-2nd-edition-note-two
