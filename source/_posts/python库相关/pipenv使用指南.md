@@ -4,7 +4,7 @@ date: 2018-01-08 14:16:29
 tags:
 permalink:
 description: >
-本文主要介绍了python包管理工具: pipenv的使用方法。
+    本文主要介绍了python包管理工具: pipenv的使用方法。
 ---
 
 [`pipenv`](https://github.com/pypa/pipenv)是[Python官方推荐](https://packaging.python.org/tutorials/managing-dependencies/#managing-dependencies)的包管理工具。可以说，它集成了`virtualenv`, `pip`和`pyenv`三者的功能。其目的旨在集合了所有的包管理工具的长处，如: `npm`, `yarn`, `composer`等的优点。
