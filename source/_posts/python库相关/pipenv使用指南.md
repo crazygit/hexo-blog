@@ -356,11 +356,11 @@ The following environment variables can be set, to do various things:
 
 ### `pipenv install`时报错`pip.exceptions.InstallationError: Command "python setup.py egg_info" failed with error code 1`
 
-错误原因是`pipenv`是用python2安装的， 解决办法是使用pip3重新安装pipenv
+错误原因是`pipenv`是用python2安装的，解决办法是使用pip3重新安装pipenv
 
 ```bash
-pip unintall pipenv
-pip3 install pipenv
+$ pip unintall pipenv
+$ pip3 install pipenv
 ```
 
 ### 在项目目录里运行`pipenv`时报错`AttributeError: module 'enum' has no attribute 'IntFlag'`
