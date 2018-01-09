@@ -1,5 +1,5 @@
 ---
-title: 《利用Python进行数据分析第二版》阅读笔记四.md
+title: 《利用Python进行数据分析第二版》阅读笔记四
 date: 2018-01-09 09:50:48
 tags:
     - matplotlib
