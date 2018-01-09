@@ -1,5 +1,5 @@
 ---
-title: NumPy快速入门指南.md
+title: NumPy快速入门指南
 date: 2017-12-19 22:08:10
 tags: numpy
 permalink: numpy-qucikstart
