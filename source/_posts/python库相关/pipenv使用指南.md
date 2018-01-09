@@ -1,8 +1,8 @@
 ---
 title: pipenv使用指南
 date: 2018-01-08 14:16:29
-tags:
-permalink:
+tags: pipenv
+permalink: pipenv-tour
 description: >
     本文主要介绍了python包管理工具: pipenv的使用方法。
 ---
