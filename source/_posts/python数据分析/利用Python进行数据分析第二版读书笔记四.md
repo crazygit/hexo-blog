@@ -405,7 +405,7 @@ Categories (50, interval[float64]): [(0.0345, 0.0853] < (0.0853, 0.134] < (0.134
 (1.196, 1.245]       0
 Name: tip_pct, dtype: int64
 ```
-从上面可以看出，小费百分比在在(0.134, 0.182]里的最多，下面的图形也能反应这一点
+从上面可以看出，小费百分比在(0.134, 0.182]里的最多，下面的图形也能反应这一点
 
 ```python
 >>> tips['tip_pct'].plot.hist(bins=50)
@@ -514,4 +514,4 @@ Text(0.5,1,'Changes in log m1 versus log unemp')
 * [Plotly](https://plot.ly/python/)
 * [Graph](https://gephi.org/)
 
-对于制作用于打印或网页的静态图形，作者推荐默认使用matplotlib以及pandas和seaborn这样的工具。对于其他的数据可视化需求，去学一个有用的工具可能会有帮助.
+对于制作用于打印或网页的静态图形，作者推荐使用matplotlib以及pandas和seaborn这样的工具。对于其他的数据可视化需求，去学一个有用的工具可能会有帮助。
