@@ -15,7 +15,7 @@ description: >
 `pipenv`主要解决了如下问题:
 
 * 不用再单独使用`pip`和`virtualenv`, 现在它们合并在一起了
-* 不用再维护`requirements.txt`, 使用`Pipfile`和`Pipfile.loc`来代替
+* 不用再维护`requirements.txt`, 使用`Pipfile`和`Pipfile.lock`来代替
 * 可以使用多个python版本(`python2`和`python3`)
 * 在安装了`pyenv`的条件下，可以自动安装需要的Python版本
 
@@ -128,7 +128,7 @@ $ pipenv uninstall --all
 
 当在执行`pipenv install`命令的时候，如果有一个`requirements.txt`文件，那么会自动从`requirements.txt`文件导入安装包信息并创建一个`Pipfile`文件。
 
-同样可以使用`$pipenv install -r path/to/requirements.txt`来导入`requirements.txt`文件
+同样可以使用`$ pipenv install -r path/to/requirements.txt`来导入`requirements.txt`文件
 
 **注意**:
 
