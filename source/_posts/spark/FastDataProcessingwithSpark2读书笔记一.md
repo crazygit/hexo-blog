@@ -114,7 +114,7 @@ $ ./bin/pyspark
 103
 
 # 获取第一行
->>> >>> textFile.first()
+>>> textFile.first()
 Row(value='# Apache Spark')
 
 # 过滤出包含"Spark"的行

@@ -12,7 +12,11 @@ date: 2017-12-24 09:02:05
 
 - [ ] [Python for Data Analysis, 2nd Edition](http://shop.oreilly.com/product/0636920050896.do)([中文翻译](https://github.com/BrambleXu/pydata-notebook))
 - [ ] Fast Data Processing with spark2(Third Edition)
-- [ ] 推荐系统实践
+- [ ] [机器学习(周志华)](https://book.douban.com/subject/26708119/)
+- [ ] [机器学习实战](https://book.douban.com/subject/24703171/)
+- [ ]
+
+- [ ] [推荐系统实践](https://book.douban.com/subject/10769749/)
 - [ ] [Scipy Lecture Notes](http://www.scipy-lectures.org/)
 
 ## 非技术类
