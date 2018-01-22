@@ -127,11 +127,11 @@ lazyload:
 math:
   engine: 'mathjax' # or 'katex'
   mathjax:
-    src: custom_mathjax_source
+    src:
     config:
       # MathJax config
   katex:
-    css: custom_css_source
-    js: custom_js_source # not used
+    css:
+    js:
     config:
       # KaTeX config
