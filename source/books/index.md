@@ -11,7 +11,7 @@ date: 2017-12-24 09:02:05
 ## 技术类
 
 - [ ] [Python for Data Analysis, 2nd Edition](http://shop.oreilly.com/product/0636920050896.do)([中文翻译](https://github.com/BrambleXu/pydata-notebook))
-- [ ] Fast Data Processing with spark2(Third Edition)
+- [ ] [Fast Data Processing with spark2(Third Edition)](https://book.douban.com/subject/26904677/)({% post_link fast-data-processing-with-spark2-note-index 读书笔记 %})
 - [ ] [机器学习(周志华)](https://book.douban.com/subject/26708119/)
 - [ ] [机器学习实战](https://book.douban.com/subject/24703171/)
 - [ ] [推荐系统实践](https://book.douban.com/subject/10769749/)
@@ -19,7 +19,7 @@ date: 2017-12-24 09:02:05
 
 ## 非技术类
 
-- [x] [高效的秘密](https://book.douban.com/subject/27014998/) ({% post_link smarter-faster-better 读书文摘%})
+- [x] [高效的秘密](https://book.douban.com/subject/27014998/) ({% post_link smarter-faster-better 读书文摘 %})
 - [ ] 打开量化投资的黑箱
 - [ ] 股票大作手回忆录
 - [ ] 未来简史: 从智人到智神

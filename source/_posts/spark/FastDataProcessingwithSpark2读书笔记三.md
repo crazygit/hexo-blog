@@ -8,6 +8,8 @@ description: >
 
 ---
 
+本书其它笔记{% post_link fast-data-processing-with-spark2-note-index 《Fast Data Processing with Spark 2（Third Edition)》读书笔记目录%}
+
 ## 数据分析的主力Datasets/DataFrames
 
 ### DataSets概述

@@ -7,6 +7,8 @@ description: >
     快速了解Spark的安装，Spark Shell使用和SparkSession对象
 ---
 
+本书其它笔记{% post_link fast-data-processing-with-spark2-note-index 《Fast Data Processing with Spark 2（Third Edition)》读书笔记目录%}
+
 ## Spark概览
 
 > Apache Spark is a fast and general-purpose cluster computing system

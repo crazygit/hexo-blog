@@ -1,5 +1,5 @@
 ---
-title: 《利用Python进行数据分析第二版》阅读笔记二
+title: 《利用Python进行数据分析第二版》读书笔记二
 date: 2017-12-28 15:57:31
 tags:
 - numpy

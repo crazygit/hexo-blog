@@ -7,6 +7,8 @@ description: >
     本文主要介绍在Spark中加载和保存数据, 以及Spark的一些概念和Spark SQL查询
 ---
 
+本书其它笔记{% post_link fast-data-processing-with-spark2-note-index 《Fast Data Processing with Spark 2（Third Edition)》读书笔记目录%}
+
 ## 在Spark中加载和保存数据
 
 在我们开始操作数据之前，让我们先看一些Spark的概念以及了解一下不同的数据形态
