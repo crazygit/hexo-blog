@@ -133,7 +133,7 @@ DataFrame
 默认情况下，fillna都是返回一个新的对象，使用`inplace`参数可以直接修改原来的DataFame
 
 ```python
->>>  _ = df.fillna(0, inplace=True)
+>>> _ = df.fillna(0, inplace=True)
 
 >>> df
           0         1         2

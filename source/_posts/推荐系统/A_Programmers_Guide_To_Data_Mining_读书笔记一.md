@@ -145,7 +145,7 @@ pearson-correlation-coefficient 皮尔逊相关系数
 
 %}
 
-### 向量空间余弦相似度(Cosine Similarity)
+### 余弦相似度(Cosine Similarity)
 
 参考[百度百科](https://baike.baidu.com/item/%E4%BD%99%E5%BC%A6%E7%9B%B8%E4%BC%BC%E5%BA%A6)
 
@@ -385,6 +385,11 @@ def pearson(rating1, rating2):
 
 [`scipy.spatial.distance`](https://docs.scipy.org/doc/scipy/reference/spatial.distance.html)模块包含了各种距离的计算方式。
 
+* scipy.spatial.distance.cityblock 曼哈顿距离
+* scipy.spatial.distance.euclidean 欧几里得距离
+* scipy.spatial.distance.chebyshev 切比雪夫距离
+* scipy.spatial.distance.minkowski 闵可夫斯基距离
+* scipy.stats.pearsonr 皮尔逊相关系数
 
 ### K最邻近算法
 

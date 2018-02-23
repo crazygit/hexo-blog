@@ -248,9 +248,9 @@ party_pcts.plot.bar()
 当数据需要聚合和汇总时，使用`seaborn`更方便一点。让我们来计算每天的小费情况
 
 ```python
->>>  import seaborn as sns
+>>> import seaborn as sns
 
-    >>> tips['tip_pct'] = tips['tip'] / (tips['total_bill'] - tips['tip'])
+>>> tips['tip_pct'] = tips['tip'] / (tips['total_bill'] - tips['tip'])
 
 >>> tips.head()
    total_bill   tip smoker  day    time  size   tip_pct
@@ -500,7 +500,7 @@ Text(0.5,1,'Changes in log m1 versus log unemp')
 `factorplot`还支持一些其它的绘图参数, 如绘制box图
 
 ```python
->>>  sns.factorplot(x='tip_pct', y='day', kind='box', data=tips[tips.tip_pct < 0.5])
+>>> sns.factorplot(x='tip_pct', y='day', kind='box', data=tips[tips.tip_pct < 0.5])
 <seaborn.axisgrid.FacetGrid at 0x127caeac8>
 ```
 ![](http://images.wiseturtles.com/2018-01-09-seaborn_factorplot_kind.png)

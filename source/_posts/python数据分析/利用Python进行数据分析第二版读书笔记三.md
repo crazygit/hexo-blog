@@ -210,7 +210,7 @@ b    1        14    7
 使用`set_index`方法，可以将`DataFrame`的列作为索引
 
 ```python
->>>  frame = pd.DataFrame({'a': range(7), 'b': range(7, 0, -1),
+>>> frame = pd.DataFrame({'a': range(7), 'b': range(7, 0, -1),
 ...                        'c': ['one', 'one', 'one', 'two', 'two',
 ...                                     'two', 'two'],
 ...                       'd':[0,1,2,0,1,2,3]})
@@ -1283,7 +1283,7 @@ date
 1  2  5  8  bar
 2  3  6  9  baz
 
->>>  melted = pd.melt(df, ['key'])
+>>> melted = pd.melt(df, ['key'])
 
 >>> melted
    key variable  value
