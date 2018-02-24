@@ -54,23 +54,23 @@ Server:
 
 ### Basic commands
 
-```
-## List Docker CLI commands
+```bash
+# List Docker CLI commands
 docker
 docker container --help
 
-## Display Docker version and info
+# Display Docker version and info
 docker --version
 docker version
 docker info
 
-## Excecute Docker image
+# Excecute Docker image
 docker run hello-world
 
-## List Docker images
+# List Docker images
 docker image ls
 
-## List Docker containers (running, all, all in quiet mode)
+# List Docker containers (running, all, all in quiet mode)
 docker container ls
 docker container ls -all
 docker container ls -a -q
@@ -78,7 +78,7 @@ docker container ls -a -q
 
 ### Docker image and container command
 
-```
+```bash
 docker build -t friendlyhello .  # Create image using this directory's Dockerfile
 docker run -p 4000:80 friendlyhello  # Run "friendlyname" mapping port 4000 to 80
 docker run -d -p 4000:80 friendlyhello         # Same thing, but in detached mode
@@ -99,7 +99,7 @@ docker run username/repository:tag                   # Run image from a registry
 
 ### Docker stack commands
 
-```
+```bash
 docker stack ls                                            # List stacks or apps
 docker stack deploy -c <composefile> <appname>  # Run the specified Compose file
 docker service ls                 # List running services associated with an app
@@ -112,7 +112,7 @@ docker swarm leave --force      # Take down a single node swarm from the manager
 
 ### Docker-machine commands
 
-```
+```bash
 docker-machine create --driver virtualbox myvm1 # Create a VM (Mac, Win7, Linux)
 docker-machine create -d hyperv --hyperv-virtual-switch "myswitch" myvm1 # Win10
 docker-machine env myvm1                # View basic information about your node
@@ -140,36 +140,36 @@ docker-machine rm $(docker-machine ls -q) # Delete all VMs and their disk images
 
 #### To clear containers:
 
-```
+```bash
 docker rm -f $(docker ps -a -q)
 ```
 
 #### To clear images:
 
-```
+```bash
 docker rmi -f $(docker images -a -q)
 ```
 
 #### To clear dangling images:
 
-```	
+```bash
 docker rmi -f $(docker images -f "dangling=true" -q)
 ```
 
 #### To clear volumes:
 
-```
+```bash
 docker volume rm $(docker volume ls -q)
 ```
 
 #### To clear networks:
 
-```
+```bash
 docker network rm $(docker network ls | tail -n+2 | awk '{if($2 !~ /bridge|none|host/){ print $1 }}')
 ```
 
 ### 查看启动失败的服务信息
-```
+
+```bash
 docker service ps --no-trunc {serviceName}
 ```
-
