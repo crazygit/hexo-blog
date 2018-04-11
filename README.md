@@ -30,3 +30,7 @@
 列出当前所有的插件和主题信息
 
     $ npm run l
+
+## 更新`hexo`和插件
+
+    $ npm update

@@ -710,3 +710,59 @@ $ curl -XGET 'localhost:9200/bank/_search?pretty' -H 'Content-Type: application/
 
 [官方文档](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html)详细介绍了各种安装Elasticsearch的方法，以及如何配置Elasticsearch。另外，
 还介绍了将Elasticsearch迁移到生产环境时，需要关注的配置项等。
+
+
+## docker-compose.yml
+
+使用docker compose, 可以很方便的在本机创建一个关于elastic stack小集群， 对于开发和测试非常方便。
+使用下面的`docker-compose.yml`文件，通过`docker compose`命令，可以在本地直接运行`elasticsearch`和`kibana`服务，`kibana`里开发工具的`Console`可以很方便的和`elasticsearch`交互。
+
+
+```yaml
+version: "3"
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.2.3
+    container_name: elasticsearch
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
+      - http.host=0.0.0.0
+      - transport.host=127.0.0.1
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    networks:
+      - esnet
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana-oss:6.2.3
+    container_name: kibana
+    environment:
+      SERVER_NAME: kibana-server
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    networks:
+      - esnet
+    depends_on:
+      - elasticsearch
+    ports:
+      - "5601:5601"
+volumes:
+  es_data:
+    driver: local
+
+networks:
+  esnet:
+```
+关于集成更多elastic stack服务，可以参考: 
+<https://github.com/elastic/stack-docker/blob/master/docker-compose.yml>
+
+kibana Console运行效果如下：
+![kibana console](http://images.wiseturtles.com/2018-04-12-kibana-devtool.png)
