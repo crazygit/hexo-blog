@@ -1,12 +1,13 @@
 ---
 title: 《A Programmer's Guide to Data Mining》读书笔记一
 date: 2018-01-22 17:34:52
-tags: 
+tags:
     - 推荐系统
     - 相似度计算
 permalink: a-programmers-guid-to-data-mining-note-one
 description: >
     推荐系统入门， 物品相似度计算方法汇总
+mathjax: true
 
 ---
 参考:
@@ -398,7 +399,3 @@ def pearson(rating1, rating2):
 完整实现请参考:
 
 <https://github.com/zacharski/pg2dm-python/blob/master/ch2/recommender.py>
-
-
-
-
