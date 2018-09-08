@@ -25,15 +25,15 @@ description: Elasticsearch快速入门, 主要介绍一些Elasticsearch的基本
     节点，每个节点都有自己的名字，它作为集群的一个单元，拥有数据存储和提供搜索能力等功能。
 * Index
 
-    索引(Index)是一系列文档(Document)的集合, 索引名全部必须小写，一个集群里可以有任意多个索引。
+    索引(Index)是一系列文档(Document)的集合, 索引名全部必须小写，一个集群里可以有任意多个索引。类似关系型数据库中的DB。
 
 * Type
 
-    从Elasticsearch 6.0.0 开始已经废弃不再使用
+    类似关系型数据库中的Table， 从Elasticsearch 6.0.0, 一个Index里只允许创建一个Type。
 
 * Document
 
-    文档，存储的最小单元
+    文档，存储的最小单元,类似关系型数据库中的Row。
 
 * Shards & Replicas
 
@@ -714,7 +714,7 @@ $ curl -XGET 'localhost:9200/bank/_search?pretty' -H 'Content-Type: application/
 
 ## docker-compose.yml
 
-使用docker compose, 可以很方便的在本机创建一个关于elastic stack小集群， 对于开发和测试非常方便。
+使用`docker compose`, 可以很方便的在本机创建一个关于elastic stack小集群， 对于开发和测试非常方便。
 使用下面的`docker-compose.yml`文件，通过`docker compose`命令，可以在本地直接运行`elasticsearch`和`kibana`服务，`kibana`里开发工具的`Console`可以很方便的和`elasticsearch`交互。
 
 

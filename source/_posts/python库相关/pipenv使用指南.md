@@ -289,7 +289,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 export WORKON_HOME=~/.venvs
 ```
 
-我们也可以通过社会环境变量`PIPENV_VENV_IN_PROJECT`使虚拟环境在每个项目的根目录下`project/.venv`。
+我们也可以通过设置环境变量`PIPENV_VENV_IN_PROJECT`使虚拟环境在每个项目的根目录下`project/.venv`。
 
 
 ### 自动激活虚拟环境
